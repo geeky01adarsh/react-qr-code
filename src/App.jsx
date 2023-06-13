@@ -1,10 +1,11 @@
 import "./App.css";
-import QRcodeGenerator from "./QRcodeGenerator";
+import QRcodeGenerator from "./components/QRcodeGenerator";
+
 
 function App() {
   return (
     <>
-      <QRcodeGenerator />
+      <QRcodeGenerator/>
     </>
   );
 }

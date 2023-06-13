@@ -20,7 +20,7 @@ const QRcodeGenerator = () => {
           />
           <br />
           <br />
-          <input
+          {/* <input
             type="text"
             onChange={(e) => setBack(e.target.value)}
             placeholder="Background color"
@@ -33,8 +33,8 @@ const QRcodeGenerator = () => {
             placeholder="Foreground color"
           />
           <br />
-          <br />
-          <input
+          <br /> */}
+          {/* <input
             type="number"
             onChange={(e) =>
               setSize(parseInt(e.target.value === "" ? 0 : e.target.value, 10))
@@ -42,15 +42,15 @@ const QRcodeGenerator = () => {
             placeholder="Size of Qr-code"
           />
           <br />
-          <br />
+          <br /> */}
           <br />
           {value && (
             <QRCode
-              title="GeeksForGeeks"
+              title="Attendance"
               value={value}
-              bgColor={back}
-              fgColor={fore}
-              size={size === "" ? 0 : size}
+              // bgColor={back}
+              // fgColor={fore}
+              size={size === "" ? 250 : size}
             />
           )}
         </center>
